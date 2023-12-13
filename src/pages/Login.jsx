@@ -1,35 +1,24 @@
-import {
-    Card,
-    Stack,
-    Typography,
-    TextField
-  } from "@mui/material";
-
+import Form from "../components/form";
 import Navbar from "../components/Navbar";
+import { Box, Container } from "@mui/material";
 
-export default function Login(){
+export default function Login({info}) {
 
-
-return(
+return (
     <>
-        <Navbar/>
-
-     <Card sx={{ padding: 5, width: 300 }}>
-
-        <Typography variant="h5" mb={3}>
-          Entra a Banco BBVA
-        </Typography>
-
-        <Typography variant="subtittle1">
-            Entra con tu cuenta y contraseña
-        </Typography>
-        <Stack spacing={2} mt={4}>
-            <Stack>
-                <TextField variant="filled" label="Cuenta" sx ={{ backgroundColor: "grey"}}/>
-            </Stack>
-        </Stack>
-    </Card>
-        </>
-      
-    )
+    <Box
+        sx={{
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "100vh",
+        }}
+    >
+    <Container>
+        <Navbar />
+        <Form info={info}/>
+    </Container>
+    </Box>
+    </>
+);
 }
