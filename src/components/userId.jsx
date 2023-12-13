@@ -12,7 +12,7 @@ export default function UserID({info}) {
         sx={{
           width: 140,
           textAlign: "center",
-          bgcolor: "black",
+          bgcolor: "#a7e0f2",
           borderRadius: "5px",
         }}
       >
@@ -23,14 +23,14 @@ export default function UserID({info}) {
           spacing={2}
         >
           <Stack>
-            <Typography variant="h6" color="white" fontFamily='roboto'>
+            <Typography variant="h6" color="black" fontFamily='roboto'>
               No. {userData.account}
             </Typography>
           </Stack>
           <Stack>
             <CopyToClipboard text="014">
               <IconButton>
-                <ContentCopyIcon sx={{ color: "grey" }} />
+                <ContentCopyIcon sx={{ color: "black" }} />
               </IconButton>
             </CopyToClipboard>
           </Stack>

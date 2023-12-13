@@ -1,6 +1,4 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
-import { useData } from "./dataContext";
-
 export default function Balance({ info }) {
 
   const { userData } = info
@@ -15,16 +13,16 @@ export default function Balance({ info }) {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              minHeight: "100vh",
+              minHeight: "90vh",
             }}
           >
             <Stack textAlign="center" spacing={2}>
               <Stack>
-                <Typography variant="h3">$ {userData.money}</Typography>
-                <Box bgcolor='purple' height={5} width={200}></Box>
+                <Typography variant="h2">$ {userData.money}</Typography>
+                <Box bgcolor='#072146' height={5} width={350}></Box>
               </Stack>
               <Stack>
-                <Typography variant="subtittle1" fontFamily='roboto'>Dinero disponible</Typography>
+                <Typography variant="subtittle1" fontFamily='Roboto'>Dinero disponible</Typography>
               </Stack>
             </Stack>
           </Container>
@@ -36,7 +34,7 @@ export default function Balance({ info }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            minHeight: "100vh",
+            minHeight: "90vh",
           }}
         >
           <Stack textAlign="center">

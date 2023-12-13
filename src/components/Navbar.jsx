@@ -3,7 +3,7 @@ import { Toolbar, AppBar, Link, Stack, Button } from "@mui/material";
 export default function Navbar() {
   return (
     <>
-      <AppBar sx={{ backgroundColor: "#cdffff" }}>
+      <AppBar sx={{ backgroundColor: "#072146" }}>
         <Toolbar>
           <Stack
             direction="row"
@@ -13,7 +13,7 @@ export default function Navbar() {
           >
             <Stack justifyContent="flex-start" alignItems="center">
               <Link to="/">
-              <img src="/src/assets/bbva.png" width={120} />
+              <img src="/src/assets/Logo-BBVA.png" width={120} />
               </Link>
             </Stack>
             <Stack
@@ -22,26 +22,23 @@ export default function Navbar() {
               justifyContent="flex-end"
               alignItems="center"
             >
-              <Stack>
-                <Button
-                  variant="filled"
-                  to='/home'
-                  sx={{
-                    backgroundColor: "#d0ebee",
+              <Stack>                
+                <Button variant="text" sx={{ color: "#fff", backgroundColor: "",
                     transition: "transform 0.3s ease",
                     "&:hover": {
-                      backgroundColor: "#d0ebee",
+                      backgroundColor: "#004",
                       transform: "scale(1.05)",
-                    },
-                  }}
-                >
-                <Button variant="text" sx={{ color: "black" }}>
+                    },}}>
                   Movimientos
-                </Button>
                 </Button>
               </Stack>
               <Stack>
-                <Button variant="text" sx={{ color: "black" }}>
+                <Button variant="text" sx={{ color: "#fff", backgroundColor: "",
+                    transition: "transform 0.3s ease",
+                    "&:hover": {
+                      backgroundColor: "#004",
+                      transform: "scale(1.05)",
+                    }, }}>
                   Transferir
                 </Button>
               </Stack>

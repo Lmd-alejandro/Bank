@@ -1,4 +1,4 @@
-import { AppBar, Card, IconButton, Stack, Toolbar } from "@mui/material";
+import { AppBar, Card, IconButton, Stack,  } from "@mui/material";
 import User from "./user";
 import UserID from "./userId";
 import LogoutIcon from "@mui/icons-material/Logout";
@@ -17,7 +17,7 @@ export default function HomeNavbar({ info }) {
             </Stack>
             <Card
               sx={{
-                bgcolor: "blue",
+                bgcolor: "#a7e0f2",
                 padding: "4px",
                 width: "45px",
                 height: "32px",
